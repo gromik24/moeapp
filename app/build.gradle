@@ -10,6 +10,7 @@ android {
         applicationId "com.gromik24.moeapp"
         minSdk 24
         targetSdk 31
+
         versionCode 1
         versionName "1.0"
 
