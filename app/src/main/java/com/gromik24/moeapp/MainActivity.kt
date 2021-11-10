@@ -1,8 +1,11 @@
 package com.gromik24.moeapp
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 
 const val TAG = "MyApp"
 
@@ -12,6 +15,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d(TAG, "Ты видел деву на скале")
         Log.d(TAG, "В одежде белой над волнами")
+
+        // srs6
+        val openBrowserButton: Button = findViewById(R.id.open_browser_button)
+        val link = Uri.parse("http://ya.ru")
+        val intent = Intent(Intent.ACTION_VIEW, link)
+        openBrowserButton.setOnClickListener(){
+            startActivity(intent)
+        }
+
+
     }
 
     override fun onStart() {
@@ -53,4 +66,8 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "Но верь мне: дева на скале")
         Log.d(TAG, "Прекрасней волн, небес и бури.")
     }
+
+
+
+
 }
