@@ -12,5 +12,22 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="switchStyle">@style/Theme.MoeApp.Switch</item>
+    </style>
+
+    <style name="Theme.MoeApp.ChipGroup" parent="Widget.MaterialComponents.ChipGroup">
+        <item name="chipSpacingHorizontal">50dp</item>
+    </style>
+
+    <style name="Theme.MoeApp.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/my_green</item>
+    </style>
+
+    <style name="Theme.MoeApp.Chip.WithIcon" parent="Theme.MoeApp.Chip">
+        <item name="chipIcon">@drawable/gift</item>
+    </style>
+
+    <style name="Theme.MoeApp.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:textColor">@color/my_green</item>
     </style>
 </resources>

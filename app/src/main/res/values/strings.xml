@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MoeAppRenamed</string>
-    <string name="button">Open Browser</string>
+    <string name="button">Поиск туров</string>
     <string name="hello">Hello</string>
-    <string name="bye">Bye</string>
+    <string name="winter">Зима</string>
+    <string name="summer">Лето</string>
+    <string name="day">Только дневные перелёты</string>
 </resources>
